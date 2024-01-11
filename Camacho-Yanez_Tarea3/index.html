@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Veterinaria VM</title>
+
+    <!-- Enlace a Bootstrap a través de CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" integrity="..." crossorigin="anonymous">
+
+    <!-- Enlace a tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="css/CSSINDEX.css">
+</head>
+	
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Logo de la Veterinaria -->
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.jpg" alt="Logo Veterinaria XYZ" height="30">
+                Veterinaria VM
+            </a>
+            <!-- Fin del Logo -->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Inicio -->
+    <header id="inicio" class="jumbotron">
+        <div class="container">
+            <h1>Bienvenido a Veterinaria VM</h1>
+            <p>Donde cuidamos y amamos a tus mascotas</p>
+            <a class="btn btn-primary btn-lg" href="#servicios" role="button">Conoce nuestros servicios</a>
+        </div>
+    </header>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="container mt-4">
+        <h2>Nuestros Servicios</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/img1.jpg" class="card-img-top" alt="Servicio 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Consulta Veterinaria</h5>
+                        <p class="card-text">Realizamos exámenes de salud y brindamos atención médica para tus mascotas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/img2.jpg" class="card-img-top" alt="Servicio 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Vacunación</h5>
+                        <p class="card-text">Mantenemos las vacunas al día para proteger a tus mascotas de enfermedades.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/img3.jpg" class="card-img-top" alt="Servicio 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Cirugía Veterinaria</h5>
+                        <p class="card-text">Contamos con un equipo especializado para realizar cirugías veterinarias.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="container mt-4">
+    <h2>Contacto</h2>
+    <p>Ponte en contacto con nosotros para más información:</p>
+    <form action="php/procesar_formulario.php" method="post">
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo Electrónico:</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+        </div>
+        <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje:</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escriba su mensaje aquí" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+    </form>
+</section>	
+	<!-- Botón para volver al inicio -->
+    <div class="container mt-4 text-center">
+        <a href="#inicio" class="btn btn-primary">Volver al Inicio</a>
+    </div>
+	
+    <!-- Pie de Página -->
+    <footer class="bg-dark text-light text-center p-3">
+        <p>&copy; 2024 Veterinaria VM. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script de Bootstrap (requerido para algunos componentes de Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="..." crossorigin="anonymous"></script>
+
+</body>
+</html>
+

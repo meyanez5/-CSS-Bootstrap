@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    padding-top: 56px; /* Ajuste para la barra de navegación fija */
+}
+
+header.jumbotron {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+section.container {
+    margin-bottom: 40px;
+}
+
+footer {
+    color: #ffffff;
+}
+
